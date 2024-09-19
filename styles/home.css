@@ -1,0 +1,4 @@
+main {
+  padding-top: var(--feed-top-nav-h);
+  padding-bottom: var(--bottom-nav-h);
+}

@@ -1,0 +1,63 @@
+<header class="header">
+   <nav class="header__top-nav" aria-label="primary navigation">
+      <div class="header__top-nav__inner container">
+         <div class="header__top-nav__row header__top-nav__row--user-home-links" >
+            <a class="header__top-nav__row--user-home-links__back-home-link centered" href="/Twitter-X-clone-deployment/" data-navlink>
+               <svg class="icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M21 11H6.414l5.293-5.293l-1.414-1.414L2.586 12l7.707 7.707l1.414-1.414L6.414 13H21z"/></svg>
+            </a>
+            <div>
+               <button class="draft-btn btn b-0 t--prm" type="button" disabled>
+                  Drafts
+               </button>
+               <button class="post-btn btn btn--prm" type="button" disabled>
+                  Post
+               </button>
+            </div>
+         </div>
+      </div>
+   </nav>
+</header>
+
+<main class="main container">
+   <section class="post-content">
+      <div class="post-content__context d-flex">
+         <div class="post-content__context__user-cont">
+            <div class="post-content__context__user-cont__img-cont">
+               <img class="post-content__context__user-cont__img-cont__img cover" src="assets/images/user/avatar.jpeg" alt="avatar">
+            </div>
+         </div>
+         <form class="post-content__context__form">
+            <textarea class="post-content__context__form__inp b-0" name="post-content" placeholder="What is happenning?!" spellcheck="false" >
+            </textarea>
+         </form>
+      </div>
+      
+      <div class="post-content__options">
+         <button class="post-content__options__visibility btn d-flex j-center g-1 b-0 t--sm t--prm" type="button" disabled>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2M4 12c0-.61.08-1.21.21-1.78L8.99 15v1c0 1.1.9 2 2 2v1.93C7.06 19.43 4 16.07 4 12m13.89 5.4c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41C17.92 5.77 20 8.65 20 12c0 2.08-.81 3.98-2.11 5.4"/></svg>
+            Everybody can reply
+         </button>
+         <div class="post-content__options__sp-cont">
+            <hr class="post-content__options__sp sp">
+         </div>
+         <div class="post-content__options__attachments">
+            <button class="post-content__options__attachments__btn t--prm" type="button" aria-label="image">
+               <svg class="icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><path d="M15.5 10a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3"/><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm16 0H5v7.92l3.375-2.7a1 1 0 0 1 1.25 0l4.3 3.44l1.368-1.367a1 1 0 0 1 1.414 0L19 14.586zM5 19h14v-1.586l-3-3l-1.293 1.293a1 1 0 0 1-1.332.074L9 12.28l-4 3.2z"/></g></svg>
+            </button>
+            <button class="post-content__options__attachments__btn t--prm" type="button" aria-label="gif" disabled>
+               <svg class="icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M19 19H5V5h14zM5 3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm6.5 11h1v-4h-1zm2 0h1v-1.5H16v-1h-1.5V11h2v-1h-3zm-4-2v1h-1v-2h2c0-.55-.45-1-1-1h-1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1z"/></svg>
+            </button>
+            <button class="post-content__options__attachments__btn t--prm" type="button" aria-label="poll" disabled>
+               <svg class="icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M8.5 7a2 2 0 1 0-4 0a2 2 0 0 0 4 0m2 0a4 4 0 1 1-8 0a4 4 0 0 1 8 0M21 4h-8v2h8zm0 7h-8v2h8zm0 7h-8v2h8zM6.5 19a2 2 0 1 1 0-4a2 2 0 0 1 0 4m0 2a4 4 0 1 0 0-8a4 4 0 0 0 0 8m0-13a1 1 0 1 0 0-2a1 1 0 0 0 0 2"/></svg>
+            </button>
+            <button class="post-content__options__attachments__btn t--prm" type="button" aria-label="schedule" disabled>
+               <svg class="icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M7 3V1h2v2h6V1h2v2h4a1 1 0 0 1 1 1v5h-2V5h-3v2h-2V5H9v2H7V5H4v14h6v2H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm10 9a4 4 0 1 0 0 8a4 4 0 0 0 0-8m-6 4a6 6 0 1 1 12 0a6 6 0 0 1-12 0m5-3v3.414l2.293 2.293l1.414-1.414L18 15.586V13z"/></svg>
+            </button>
+            <button class="post-content__options__attachments__btn t--prm" type="button" aria-label="location" disabled>
+               <svg class="icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 2)"><path d="m6.5 16.54l.631-.711Q8.205 14.6 9.064 13.49l.473-.624Q12.5 8.875 12.5 6.533C12.5 3.201 9.814.5 6.5.5s-6 2.701-6 6.033q0 2.342 2.963 6.334l.473.624a55 55 0 0 0 2.564 3.05"/><circle cx="6.5" cy="6.5" r="2.5"/></g></svg>
+            </button>
+         </div>
+      </div>
+   </section>
+
+</main>

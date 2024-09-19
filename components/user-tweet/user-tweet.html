@@ -1,0 +1,195 @@
+<template>
+   <link rel="stylesheet" href="./components/user-tweet/user-tweet.css">
+
+   <article class="post-ctx">
+      <div class="post-ctx__author-img-bar">
+         <div class="post-ctx__author-img-bar__img-cont">
+            <img class="post-ctx__author-img-bar__img-cont__img cover" src="" alt="avatar" width="40" height="40">
+            <!-- <slot name="author-avatar">
+               <img class="post-ctx__author-img-bar__img-cont__img cover" src="assets/images/user/avatar.jpeg" alt="avatar" width="40" height="40">
+            </slot> -->
+         </div>
+      </div>
+      
+      <div class="post-ctx__content-bar">
+         <div class="post-ctx__content-bar__header">
+            <a class="post-ctx__content-bar__header__author-link" href="/user-panel" data-navlink>
+               <span class="post-ctx__content-bar__header__author-link__avatar-cont">
+                  <img class="post-ctx__content-bar__header__author-link__avatar-cont__img" src="" alt="avatar">
+               </span>
+               <span class="post-ctx__content-bar__header__author-link__names-cont">
+                  <span class="post-ctx__content-bar__header__username">
+                     <span class="post-ctx__content-bar__header__username__text">
+                        username
+                     </span>
+                     <!-- <slot name="author-username">
+                        <span>
+                           username
+                        </span>
+                     </slot> -->
+                  </span>
+                  <span class="post-ctx__content-bar__header__id">
+                     <span class="post-ctx__content-bar__header__id__text">
+                        @id
+                     </span>
+                     <!-- <slot name="author-id">
+                        <span>
+                           @id
+                        </span>
+                     </slot> -->
+                  </span>
+               </span>
+            </a>
+            <span class="sp-dot">
+               <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><circle cx="12.1" cy="12.1" r="1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+            </span>
+            <span class="post-ctx__content-bar__header__time">
+               <time class="post-ctx__content-bar__header__time" datetime="">
+                  14h
+               </time>
+               <!-- <slot name="publish-time">
+                  <time datetime="">
+                     14h
+                  </time>
+               </slot> -->
+            </span>
+            <button class="post-ctx__content-bar__header__follow-btn" type="button">
+               Follow
+            </button>
+            <div class="post-ctx__content-bar__header__menu" data-activable>
+               <button class="post-ctx__content-bar__header__menu__btn" type="button">
+                  <svg class="icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12a1 1 0 1 0 2 0a1 1 0 1 0-2 0m7 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0m7 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0"/></svg>
+               </button>
+               <div class="post-ctx__content-bar__header__menu__panel">
+                  <button type="button" class="post-ctx__content-bar__header__menu__panel__item post-ctx__content-bar__header__menu__panel__item--delete" data-delete>
+                     Delete post
+                  </button>
+               </div>
+            </div>
+         </div>
+         <div class="post-ctx__content">
+            <div class="post-ctx__content__text">
+               <span class="post-ctx__content__text__text">
+                  placeholder text
+               </span>
+               <!-- <slot name="post-content">
+                  <span>
+                     placeholder text
+                  </span>
+               </slot> -->
+            </div>
+            <div class="post-ctx__content__media">
+               <!-- <slot name="post-media">
+                  <div class="post-ctx__content__media__inner">
+                     <img src="assets/images/user/header.jpg" alt="">
+                  </div>
+               </slot> -->
+            </div>
+         </div>
+         <div class="post-ctx__date-view-cont">
+            <span class="post-ctx__date-view-cont__datetime">
+               may 2024
+            </span>
+            <span class="sp-dot">
+               <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><circle cx="12.1" cy="12.1" r="1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+            </span>
+            <span class="post-ctx__date-view-cont__view">
+               <span class="post-ctx__date-view-cont__view__num">
+                  0
+               </span>
+               <span class="post-ctx__date-view-cont__view__text">
+                  Views
+               </span>
+            </span>
+         </div>
+         <hr class="datetime-analytics-sp sp-line">
+         <div class="post-ctx__info">
+            <a class="post-ctx__info__btn comments__link" href="javascript:void(0)" data-navlink aria-label="comments">
+               <span class="post-ctx__info__btn__icon-cont">
+                  <svg class="icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" d="M1 4.5A2.5 2.5 0 0 1 3.5 2h9A2.5 2.5 0 0 1 15 4.5v5a2.5 2.5 0 0 1-2.5 2.5H8.688l-3.063 2.68A.98.98 0 0 1 4 13.942V12h-.5A2.5 2.5 0 0 1 1 9.5zM3.5 3A1.5 1.5 0 0 0 2 4.5v5A1.5 1.5 0 0 0 3.5 11H5v2.898L8.312 11H12.5A1.5 1.5 0 0 0 14 9.5v-5A1.5 1.5 0 0 0 12.5 3z"/></svg>
+               </span>
+               <span class="post-ctx__info__btn__count">
+                  <span class="post-ctx__info__btn__count__text post-ctx__info__btn__count__text--comments">
+                     0
+                  </span>
+                  <!-- <slot name="comments-count">
+                     <span>
+                        0
+                     </span>
+                  </slot> -->
+               </span>
+            </a>
+            <button class="post-ctx__info__btn repost-btn" type="button" aria-label="repost" data-activable>
+               <span class="post-ctx__info__btn__icon-cont">
+                  <svg class="icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"><path fill="currentColor" d="M5 4a2 2 0 0 0-2 2v6H0l4 4l4-4H5V6h7l2-2zm10 4h-3l4-4l4 4h-3v6a2 2 0 0 1-2 2H6l2-2h7z"/></svg>
+               </span>
+               <span class="post-ctx__info__btn__count">
+                  <span class="post-ctx__info__btn__count__text post-ctx__info__btn__count__text--reposts">
+                     0
+                  </span>
+                  <!-- <slot name="reposts-count">
+                     <span>
+                        0
+                     </span>
+                  </slot> -->
+               </span>
+            </button>
+            <button class="post-ctx__info__btn like-btn" type="button" aria-label="like" data-activable>
+               <span class="post-ctx__info__btn__icon-cont">
+                  <svg class="icon--inactive icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M19.285 12.645a3.8 3.8 0 0 0-5.416-5.332q-.288.288-.732.707l-.823.775l-.823-.775q-.445-.42-.733-.707a3.8 3.8 0 0 0-5.374 0c-1.468 1.469-1.485 3.844-.054 5.32l6.984 6.984l6.97-6.972zm-14.75-6.18a5 5 0 0 1 7.072 0q.273.274.707.682q.432-.408.707-.683a5 5 0 0 1 7.125 7.017l-7.125 7.126a1 1 0 0 1-1.414 0L4.48 13.48a5 5 0 0 1 .055-7.017z"/></svg>
+                  <svg class="icon--active icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12.001 4.529a6 6 0 0 1 8.242.228a6 6 0 0 1 .236 8.236l-8.48 8.492l-8.478-8.492a6 6 0 0 1 8.48-8.464"/></svg>
+               </span>
+               <span class="post-ctx__info__btn__count">
+                  <span class="post-ctx__info__btn__count__text post-ctx__info__btn__count__text--likes">
+                     0
+                  </span>
+                  <!-- <slot name="likes-count">
+                     <span>
+                        0
+                     </span>
+                  </slot> -->
+               </span>
+            </button>
+            <div class="post-ctx__info__view" aria-label="view">
+               <span class="post-ctx__info__btn__icon-cont">
+                  <svg class="icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M5 12a1 1 0 0 0-1 1v8a1 1 0 0 0 2 0v-8a1 1 0 0 0-1-1m5-10a1 1 0 0 0-1 1v18a1 1 0 0 0 2 0V3a1 1 0 0 0-1-1m10 14a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1m-5-8a1 1 0 0 0-1 1v12a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1"/></svg>
+               </span>
+               <span class="post-ctx__info__btn__count">
+                  <span class="post-ctx__info__btn__count__text post-ctx__info__btn__count__text--view">
+                     0
+                  </span>
+                  <!-- <slot name="view-count">
+                     <span>
+                        0
+                     </span>
+                  </slot> -->
+               </span>
+            </div>
+            <button class="post-ctx__info__btn save-btn save-btn--focused" type="button" aria-label="save" data-activable>
+               <span class="post-ctx__info__btn__icon-cont">
+                  <svg class="icon--inactive icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M352 48H160a48 48 0 0 0-48 48v368l144-128l144 128V96a48 48 0 0 0-48-48"/></svg>
+                  <svg class="icon--active icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M8 2a3 3 0 0 0-3 3v16a1 1 0 0 0 1.447.894L12 19.118l5.553 2.776A1 1 0 0 0 19 21V5a3 3 0 0 0-3-3z" clip-rule="evenodd"/></svg>
+               </span>
+            </button>
+            <button class="post-ctx__info__btn share-btn share-btn--focused" type="button" aria-label="share">
+               <span class="post-ctx__info__btn__icon-cont">
+                  <svg class="icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m13.12 17.023l-4.199-2.29a4 4 0 1 1 0-5.465l4.2-2.29a4 4 0 1 1 .958 1.755l-4.2 2.29a4 4 0 0 1 0 1.954l4.2 2.29a4 4 0 1 1-.959 1.755M6 14a2 2 0 1 0 0-4a2 2 0 0 0 0 4m11-6a2 2 0 1 0 0-4a2 2 0 0 0 0 4m0 12a2 2 0 1 0 0-4a2 2 0 0 0 0 4"/></svg>
+               </span>
+            </button>
+            <div class="pair-save-share-cont">
+               <button class="post-ctx__info__btn save-btn" type="button" aria-label="save" data-activable>
+                  <span class="post-ctx__info__btn__icon-cont">
+                     <svg class="icon--inactive icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M352 48H160a48 48 0 0 0-48 48v368l144-128l144 128V96a48 48 0 0 0-48-48"/></svg>
+                     <svg class="icon--active icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M8 2a3 3 0 0 0-3 3v16a1 1 0 0 0 1.447.894L12 19.118l5.553 2.776A1 1 0 0 0 19 21V5a3 3 0 0 0-3-3z" clip-rule="evenodd"/></svg>
+                  </span>
+               </button>
+               <button class="post-ctx__info__btn share-btn" type="button" aria-label="share">
+                  <span class="post-ctx__info__btn__icon-cont">
+                     <svg class="icon--sm" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m13.12 17.023l-4.199-2.29a4 4 0 1 1 0-5.465l4.2-2.29a4 4 0 1 1 .958 1.755l-4.2 2.29a4 4 0 0 1 0 1.954l4.2 2.29a4 4 0 1 1-.959 1.755M6 14a2 2 0 1 0 0-4a2 2 0 0 0 0 4m11-6a2 2 0 1 0 0-4a2 2 0 0 0 0 4m0 12a2 2 0 1 0 0-4a2 2 0 0 0 0 4"/></svg>
+                  </span>
+               </button>
+            </div>
+         </div>
+      </div>
+   </article>
+</template>

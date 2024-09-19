@@ -1,0 +1,44 @@
+{
+   "start_url": "https://parsa-farahani.github.io/Twitter-X-clone-deployment/",
+   "name": "Twitter-X",
+   "short_name": "Twitter-X",
+   "description": "From breaking news and entertainment to sports and politics, get the full story with all the live commentary.",
+   "categories": ["social", "entertainment"],
+   "theme_color": "#111111",
+   "background_color": "#111111",
+   "display": "standalone",
+   "orientation": "portrait",
+   "icons": [
+      {
+         "src": "assets/icons/x-logo/x-icon.png",
+         "type": "image/png",
+         "sizes": "512x512"
+      }
+   ],
+   "screenshots": [
+      {
+         "src": "assets/screenshots/home-406-713.png",
+         "type": "image/png",
+         "sizes": "406x713"
+      },
+      {
+         "src": "assets/screenshots/post-406-713.png",
+         "type": "image/png",
+         "sizes": "406x713"
+      }
+   ],
+   "shortcuts": [
+      {
+         "url": "https://parsa-farahani.github.io/Twitter-X-clone-deployment/",
+         "name": "Twitter-X",
+         "short_name": "Twitter-X",
+         "description": "Twitter-X, social app"
+      },
+      {
+         "url": "https://parsa-farahani.github.io/Twitter-X-clone-deployment/user-panel",
+         "name": "My page",
+         "short_name": "My page",
+         "description": "User panel"
+      }
+   ]
+}
